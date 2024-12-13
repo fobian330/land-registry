@@ -1,0 +1,23 @@
+{
+  "name": "land-registry",
+  "version": "1.0.0",
+  "description": "Blockchain-based Land Registry System",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "start:dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "@truffle/hdwallet-provider": "^2.1.0",
+    "dotenv": "^16.4.5",
+    "web3": "^1.8.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "truffle": "^5.7.0"
+  }
+}
